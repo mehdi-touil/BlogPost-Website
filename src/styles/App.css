@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: white;
+  text-decoration: none; /* no underline */
+}
+body,
+html,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/********HEADER**********/
+.header,
+footer,
+.header section {
+  width: 100%;
+  height: 10vh;
+  background-color: #484444;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  height: 5vh;
+  margin-bottom: auto;
+  font-family: "Bungee", cursive;
+}
+.header section {
+  justify-content: flex-end;
+  font-size: 2rem;
+}
+
+.headeritem {
+  font-family: "Bungee", cursive;
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  font-size: calc(0.3rem + 2vmin);
+}
+@media screen and (min-width: 480px) {
+  .headeritem {
+    width: 30%;
+  }
+}
+.headeritem:hover {
+  border-color: #b9b1de;
+  box-shadow: 10px 5px 25px 0px rgba(209, 209, 209, 0.75);
+}
+.logo {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.logo img {
+  height: auto;
+  max-width: 100%;
+}
+
+/**********POST*******/
+.posts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d6d1d1;
+  min-height: 90vh;
+}
+.postitem {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid #6d7178;
+  background: rgb(249, 245, 245);
+  width: 90%;
+  margin: 10px;
+  height: 50vh;
+  padding: 20px;
+  border-radius: 10px;
+}
+.postitem div:nth-child(1) {
+  margin-bottom: 5px;
+}
+.postitem div:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.postitem div:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 25%;
+}
+.postitem div:nth-child(4) a {
+  color: black;
+  margin-top: auto;
+  border-radius: 20px;
+  width: 30%;
+  display: flex;
+  height: 80%;
+}
+.postitem a:hover {
+  box-shadow: 10px 5px 25px 0px rgba(70, 69, 69, 0.75);
+}
+.postitem div:nth-child(4) a span {
+  height: 100%;
+  background-color: #454c53;
+  color: white;
+  width: 70%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-arrow-right {
+  color: white;
+}
+.postitem div:nth-child(4) > div {
+  width: 70%;
+  height: 80%;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+.postitem div:nth-child(4) > div div {
+  width: 60%;
+  height: 80%;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.postitem div:nth-child(4) a div {
+  height: 100%;
+  background-color: #545b5d;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 10px 10px 0;
+}
+.title {
+  font-size: 2rem;
+}
+.author-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.timestamp {
+  color: #525050;
+}
+.description {
+  font-size: 1.2rem;
+  color: #545b5d;
+  margin-bottom: 5px;
+}
+.fa-pen-to-square:hover {
+  color: rgb(4, 88, 133);
+}
+.fa-trash:hover {
+  color: red;
+}
+@media screen and (max-width: 500px) {
+  .postitem {
+    height: auto;
+  }
+  .postitem div:nth-child(4) a {
+    width: 80%;
+    height: none;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+  .postitem div:nth-child(4) a span {
+    font-size: 0.8rem;
+  }
+  .postitem div:nth-child(4) > div {
+    flex-direction: column;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .postitem div:nth-child(4) {
+    height: 100px;
+    flex-direction: column;
+  }
+  .postitem div:nth-child(4) > div div {
+    width: 100%;
+  }
+  .title {
+    font-size: 1rem;
+    font-family: oswald, sans-serif;
+  }
+  .description {
+    font-size: 0.8rem;
+  }
+  .headeritem {
+    padding: 15px;
+  }
+}
+.wrapper {
+  background-color: #d6d1d1;
+  min-height: 90vh;
+  padding: 20px;
+}
+.posttitle {
+  height: auto;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px 200px 0px 0px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #6d7178;
+  font-family: "Montserrat", sans-serif;
+}
+.posttitle span {
+  border-bottom: none;
+  padding: 20px;
+  text-align: center;
+}
+.postcontent {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(68, 68, 68);
+  padding: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+.p2 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 5px;
+  border-radius: 0px 0px 200px 200px;
+}
+
+.commentitem,
+.newcomment,
+.formcomment {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  font-size: 1.5rem;
+  border: 2px solid #6d7178;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.formcomment {
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 5px 10px 30px;
+}
+.formcomment section {
+  width: 80%;
+}
+.commenticon {
+  margin: 10px;
+}
+.commentbody {
+  font-family: "Montserrat", sans-serif;
+}
+.commentbody {
+  display: flex;
+  flex-direction: column;
+}
+.commentbody span:nth-child(2) {
+  color: #484444;
+  align-self: flex-end;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.loading {
+  height: 85vh;
+  transition: all 1s ease-in-out;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+svg circle {
+  transform-origin: center center;
+  animation: rotate 3s ease-in-out infinite alternate-reverse;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    stroke-dasharray: 50;
+  }
+  100% {
+    transform: rotate(360deg);
+    stroke-dasharray: 300;
+  }
+}
+.error {
+  color: red;
+}

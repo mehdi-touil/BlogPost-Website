@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&display=swap");
+form {
+  margin: 0 auto 2em auto;
+  padding: 1.5em 4em;
+  box-shadow: 0 0 3px 3px azure;
+  border-radius: 0.5em;
+}
+form h1 {
+  text-transform: capitalize;
+}
+form section {
+  display: flex;
+  flex-direction: column;
+  margin: 0.25em 0 0.5em 0;
+}
+form section label {
+  margin: 0.5em 0;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+form section input {
+  background-color: white;
+  border: 2px solid #bcb6b6;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+form section a {
+  color: rgb(80, 78, 78);
+}
+form button,
+form section button,
+form section a {
+  margin-top: 0.75em;
+  border: none;
+  border-radius: 7px;
+  height: 40px;
+  padding: 0.2rem 1.5em;
+  color: white;
+  background-color: #463546;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: center;
+}
+#signup {
+  background: none;
+  color: rgb(96, 91, 91);
+  padding: 0;
+  font-size: 1rem;
+}
+form {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 10px;
+}
